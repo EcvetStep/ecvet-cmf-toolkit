@@ -985,6 +985,27 @@ ul.menu li a.violet:hover,ul.menu li:hover a.violet {
         left: -50px;
         text-align: left;
     }
+    .hometitle{
+        font-size: 25px;
+        font-family: 'Lobster', helvetica, arial;
+        margin-left: 0px;
+        margin-bottom: 15px;
+        text-align: left;
+        position: relative;
+    }
+    .hometxt{
+        margin-left: 0px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    .wordle{
+        width: 60%;
+        margin-top:20px;
+        margin-left: 100px;
+        margin-bottom: 30px;
+        position: relative;
+        
+    }
 
 
 /************************************************************************************************************************/
