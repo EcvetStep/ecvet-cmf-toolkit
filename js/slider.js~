@@ -236,11 +236,28 @@
    					});
 				});
 
+				$(document).ready(function(){
+   				$("#flipae").click(function(){
+   				if($("#panelab").is(":visible")){
+   						$("#panelab").slideToggle("slow");
+   					}
+   					else if($("#panelac").is(":visible")){
+   						$("#panelac").slideToggle("slow");
+   					}
+   					else if($("#panelad").is(":visible")){
+   						$("#panelad").slideToggle("slow");
+   					}
+					else if($("#panelaw").is(":visible")){
+   						$("#panelaw").slideToggle("slow");
+   					}
 
+       			$("#panelae").slideToggle("slow");
+   					});
+				});
 
 				$(document).ready(function(){
    				$("#flipaw").click(function(){
-   					if($("#panelab").is(":visible")){
+   				if($("#panelab").is(":visible")){
    						$("#panelab").slideToggle("slow");
    					}
    					else if($("#panelac").is(":visible")){

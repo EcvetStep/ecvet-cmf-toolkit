@@ -24,7 +24,7 @@ body, html {height:100%}
 /* ============================= main layout ====================== */
 a {color:#034B98;text-decoration:underline;outline:none}
 a:hover {text-decoration:none}
-h1 {padding:48px 0 0 0}
+h1 {padding:10px 10px 10px 20px}
 h2 {font-size:26px;line-height:1.2em;padding:17px 0 20px 0;color:#034B98;font-weight:700}
 p {padding-bottom:20px}
 /* ============================= header ====================== */
@@ -56,6 +56,22 @@ header {width:350px;float:left}
 .button1 span {position:absolute;top:0;left:0;width:100%;height:100%;background:#ffffff;}
 .button1 strong {position:relative;font-weight:400;display:block;padding:0 14px;letter-spacing:-1px}
 .button1:hover {color:#034B98}
+.button2 {display:inline-block;font-size:16px;color:#ffffff;;text-transform:uppercase;text-decoration:none;background:#F68712;line-height:33px;position:relative}
+.button2 span {position:absolute;top:0;left:0;width:100%;height:100%;background:#F68712;}
+.button2 strong {position:relative;font-weight:400;display:block;padding:0 14px;letter-spacing:-1px}
+.button2:hover {color:#F68712}
+.button3 {display:inline-block;font-size:16px;color:#ffffff;;text-transform:uppercase;text-decoration:none;background:#81AF29;line-height:33px;position:relative}
+.button3 span {position:absolute;top:0;left:0;width:100%;height:100%;background:#81AF29;}
+.button3 strong {position:relative;font-weight:400;display:block;padding:0 14px;letter-spacing:-1px}
+.button3:hover {color:#034B98}
+.button4 {display:inline-block;font-size:16px;color:#ffffff;;text-transform:uppercase;text-decoration:none;background:#D61740;line-height:33px;position:relative}
+.button4 span {position:absolute;top:0;left:0;width:100%;height:100%;background:#D61740;}
+.button4 strong {position:relative;font-weight:400;display:block;padding:0 14px;letter-spacing:-1px}
+.button4:hover {color:#034B98}
+.button5 {display:inline-block;font-size:16px;color:#ffffff;;text-transform:uppercase;text-decoration:none;background:#6AABC7;line-height:33px;position:relative}
+.button5 span {position:absolute;top:0;left:0;width:100%;height:100%;background:#6AABC7;}
+.button5 strong {position:relative;font-weight:400;display:block;padding:0 14px;letter-spacing:-1px}
+.button5:hover {color:#034B98}
 .date {float:left;width:52px;margin-right:17px;text-align:center;font-size:49px;font-weight:700;color:#034B98;letter-spacing:-1px;line-height:1.2em}
 .date strong {margin-top:-9px;display:block}
 .date span {font-weight:400;font-size:25px;line-height:1.2em;margin-top:-13px;display:block}
@@ -156,19 +172,97 @@ font:14px "Trebuchet MS", Arial, Helvetica, sans-serif
     display: none;
 }
 /*************************/
+#flipaw{width: 200px;}
 #panelaw, #flipaw {
     padding: 5px;
     text-align: left;
-    background-color: #D61740;
-    border: solid 1px #c3c3c3;
-	cursor: pointer;
-	color:#fff;
+    background-color: #F68712;
+    border: solid 5px #F68712;
+    cursor: pointer;
+    color:#fff;
 font:14px "Trebuchet MS", Arial, Helvetica, sans-serif
 }
 
 #panelaw {
     padding: 20px;
     display: none;
+    margin-top: 30px;
+
+}
+
+#flipab{width: 200px;}
+#panelab, #flipab {
+    padding: 5px;
+    text-align: left;
+    background-color: #F68712;
+    border: solid 5px #F68712;
+    cursor: pointer;
+    color:#fff;
+font:14px "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+
+#panelab {
+    padding: 20px;
+    display: none;
+    margin-top: 30x;
+
+}
+
+
+#flipae{width: 200px;}
+#panelae, #flipae {
+    padding: 5px;
+    text-align: left;
+    background-color: #F68712;
+    border: solid 5px #F68712;
+    cursor: pointer;
+    color:#fff;
+font:14px "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+
+#panelae {
+    padding: 20px;
+    display: none;
+    margin-top: 30x;
+
+}
+
+
+#flipac{width: 200px;}
+#panelac, #flipac {
+    padding: 5px;
+    text-align: left;
+    background-color: #F68712;
+    border: solid 5px #F68712;
+    cursor: pointer;
+    color:#fff;
+font:14px "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+
+#panelac {
+    padding: 20px;
+    display: none;
+    margin-top: 30x;
+
+}
+
+
+#flipad{width: 200px;}
+#panelad, #flipad {
+    padding: 5px;
+    text-align: left;
+    background-color: #F68712;
+    border: solid 5px #F68712;
+    cursor: pointer;
+    color:#fff;
+font:14px "Trebuchet MS", Arial, Helvetica, sans-serif
+}
+
+#panelad {
+    padding: 20px;
+    display: none;
+    margin-top: 30x;
+
 }
 /**************************/
 
@@ -257,72 +351,6 @@ font:14px "Trebuchet MS", Arial, Helvetica, sans-serif
     display: none;
 }
 /*************************/
-#panelab, #flipab {
-    padding: 5px;
-    text-align: left;
-    background-color: #81AF29;
-    border: solid 1px #c3c3c3;
-	cursor: pointer;
-	color:#fff;
-font:14px "Trebuchet MS", Arial, Helvetica, sans-serif
-}
-
-#panelab {
-    padding: 20px;
-    display: none;
-}
-/**************************/
-
-#panelac, #flipac {
-    padding: 5px;
-    text-align: left;
-    background-color: #81AF29;
-    border: solid 1px #c3c3c3;
-	cursor: pointer;
-	color:#fff;
-font:14px "Trebuchet MS", Arial, Helvetica, sans-serif
-}
-
-#panelac {
-    padding: 20px;
-    display: none;
-}
-
-/********************************/
-
-#panelae, #flipae {
-    padding: 5px;
-    text-align: left;
-    background-color: #81AF29;
-    border: solid 1px #c3c3c3;
-	cursor: pointer;
-	color:#fff;
-font:14px "Trebuchet MS", Arial, Helvetica, sans-serif
-}
-
-#panelae {
-    padding: 20px;
-    display: none;
-}
-/**************************/
-
-#panelad, #flipad {
-    padding: 5px;
-    text-align: left;
-    background-color: #81AF29;
-    border: solid 1px #c3c3c3;
-	cursor: pointer;
-	color:#fff;
-font:14px "Trebuchet MS", Arial, Helvetica, sans-serif
-}
-
-#panelad {
-    padding: 20px;
-    display: none;
-}
-
-/********************************/
-
 
 /********************************************** panding dives2************************************************************/
 
@@ -792,7 +820,7 @@ ul.menu li a.violet {
 ul.menu li:hover > a,ul.menu li > a:hover {
     background:#aaa;
     /*color:#fff;*/
-    padding:30px 40px 0;
+    padding:0px 40px 0;
 }
 ul.menu li a.red:hover,ul.menu li:hover a.red {
 	background:#244C98;
@@ -818,59 +846,24 @@ ul.menu li a.violet:hover,ul.menu li:hover a.violet {
     width:100%;
 }
 
-/****************************************************Button*************************************************/
-
-.Buttonx {
-	-moz-box-shadow: 7px 0px 0px 0px #244c98;
-	-webkit-box-shadow: 7px 0px 0px 0px #244c98;
-	box-shadow: 7px 0px 0px 0px #244c98;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #244c98), color-stop(1, #244c98));
-	background:-moz-linear-gradient(top, #244c98 5%, #244c98 100%);
-	background:-webkit-linear-gradient(top, #244c98 5%, #244c98 100%);
-	background:-o-linear-gradient(top, #244c98 5%, #244c98 100%);
-	background:-ms-linear-gradient(top, #244c98 5%, #244c98 100%);
-	background:linear-gradient(to bottom, #244c98 5%, #244c98 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#244c98', endColorstr='#244c98',GradientType=0);
-	background-color:#244c98;
-
-	border-radius:17px;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Courier New;
-	font-size:15px;
-	font-weight:bold;
-	padding:14px 76px;
-	text-decoration:none;
-	text-shadow:2px 0px 50px #244c98;
-}
-.Buttonx:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #244c98), color-stop(1, #244c98));
-	background:-moz-linear-gradient(top, #244c98 5%, #244c98 100%);
-	background:-webkit-linear-gradient(top, #244c98 5%, #244c98 100%);
-	background:-o-linear-gradient(top, #244c98 5%, #244c98 100%);
-	background:-ms-linear-gradient(top, #244c98 5%, #244c98 100%);
-	background:linear-gradient(to bottom, #244c98 5%, #244c98 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#244c98', endColorstr='#244c98',GradientType=0);
-	background-color:#244c98;
-
-}
 .Buttonx:active {
 	position:relative;
 	top:1px;
 }
 
     .imagebig{
-        width: 350px;
+        width: 400px;
+        height: 200px;
+        padding-bottom: 5px;
         position: relative;
         top: 10px;
-        left: 0px;
+        left: -250px;
     }
     .image{
         width: 150px;
         position: relative;
-        top: 15px;
-        left: -50px;
+        top: 30px;
+        left: -200px;
     }
     .zoom{
         width: 0px;
@@ -954,7 +947,7 @@ ul.menu li a.violet:hover,ul.menu li:hover a.violet {
         width: 300px;
         position: relative;
         top: -100px;
-        left: 200px;
+        left: 300px;
         text-align: left;
     }
     .imgtxt2{
@@ -985,26 +978,211 @@ ul.menu li a.violet:hover,ul.menu li:hover a.violet {
         left: -50px;
         text-align: left;
     }
+
+
+
+
+    /*.................................................-------________-------.............................................................................*/
+
+
     .hometitle{
-        font-size: 25px;
+        font-size: 20px;
         font-family: 'Lobster', helvetica, arial;
         margin-left: 0px;
+        margin-top: 20px;
         margin-bottom: 15px;
         text-align: left;
         position: relative;
+        color: #fff;
+        background-color: #244C98;
+    }
+    .leveltitle{
+        font-size: 20px;
+        font-family: 'Lobster', helvetica, arial;
+        margin-left: -70px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        text-align: left;
+        position: relative;
+        color: #fff;
+        background-color: #244C98;
     }
     .hometxt{
         margin-left: 0px;
         margin-bottom: 20px;
         text-align: left;
+    }.leveltxt{
+        font-size: 15px;
+        width: 610px;
+        margin-left: -60px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: left;
     }
+    .lev2title{
+        font-size: 20px;
+        font-family: 'Lobster', helvetica, arial;
+        margin-left: -70px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        text-align: left;
+        position: relative;
+        color: #fff;
+        background-color: #F68712;
+    }
+    .lev2titledet{
+        font-size: 20px;
+        font-family: 'Lobster', helvetica, arial;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        text-align: left;
+        position: relative;
+        color: #fff;
+        background-color: #F68712;
+    }
+    .lev2txt{
+        color: #F68712;
+        font-size: 15px;
+        width: 610px;
+        margin-left: -60px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .lev2det{
+        color: #F68712;
+        font-size: 15px;
+        margin-top: -60px;
+        width: 610px;
+        margin-left: 20px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    .lev3title{
+        font-size: 20px;
+        font-family: 'Lobster', helvetica, arial;
+        margin-left: -70px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        text-align: left;
+        position: relative;
+        color: #fff;
+        background-color: #81AF29;
+    }
+    .lev3titledet{
+        font-size: 20px;
+        font-family: 'Lobster', helvetica, arial;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        text-align: left;
+        position: relative;
+        color: #fff;
+        background-color: #81AF29;
+    }
+    .lev3tdet{
+        color: #81AF29;
+        font-size: 15px;
+        width: 610px;
+        margin-left: 20px;
+        margin-top: -60px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .lev4titledet{
+        font-size: 20px;
+        font-family: 'Lobster', helvetica, arial;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        text-align: left;
+        position: relative;
+        color: #fff;
+        background-color: #D61740;
+    }
+    .lev4tdet{
+        color: #D61740;
+        font-size: 15px;
+        width: 610px;
+        margin-left: 20px;
+        margin-top: -60px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .lev5titledet{
+        font-size: 20px;
+        font-family: 'Lobster', helvetica, arial;
+        margin-left: 20px;
+        margin-bottom: 15px;
+        text-align: left;
+        position: relative;
+        color: #fff;
+        background-color: #6AABC7;
+    }
+    .lev5tdet{
+        color: #6AABC7;
+        font-size: 15px;
+        width: 610px;
+        margin-left: 20px;
+        margin-top: -20px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .lev3txt{
+        color: #81AF29;
+        font-size: 15px;
+        width: 610px;
+        margin-left: -60px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .lev4title{
+        font-size: 20px;
+        font-family: 'Lobster', helvetica, arial;
+        margin-left: -70px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        text-align: left;
+        position: relative;
+        color: #fff;
+        background-color: #D61740;
+    }
+    .lev4txt{
+        color: #D61740;
+        font-size: 15px;
+        width: 610px;
+        margin-left: -60px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .lev5title{
+        font-size: 20px;
+        font-family: 'Lobster', helvetica, arial;
+        margin-left: -70px;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        text-align: left;
+        position: relative;
+        color: #fff;
+        background-color: #6AABC7;
+    }
+    .lev5txt{
+        color: #6AABC7;
+        font-size: 15px;
+        width: 610px;
+        margin-left: -60px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
     .wordle{
         width: 60%;
         margin-top:20px;
         margin-left: 100px;
         margin-bottom: 30px;
         position: relative;
-        
     }
 
 
