@@ -589,9 +589,9 @@ body {
 	box-shadow: 0 0 0 1px #ccc;
 }
 .flat a:hover{background: #F68712;}
-.flat a.active{background: #fff;} 
+.flat a.active{background: #F68712;} 
 .flat a:hover:after{background: #F68712;}
-.flat a.active:after{background: #fff;}
+.flat a.active:after{background: #F68712;}
 
 
 /*----------------------search box-----------------------------*/

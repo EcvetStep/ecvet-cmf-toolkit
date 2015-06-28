@@ -39,3 +39,16 @@ $(document).ready(function() {
 	})
 		
  });
+
+$(document).ready(function () {
+    $('.nav a').click(function(e) {
+
+        $('.nav a').removeClass('active');
+
+        var $this = $(this);
+        if (!$this.hasClass('active')) {
+            $this.addClass('active');
+        }
+        //e.preventDefault();
+    });
+});
