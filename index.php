@@ -7,6 +7,8 @@
 		<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
 		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="all">
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+		<link type="text/css" rel="stylesheet" href="css/example.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery-1.6.js" ></script>
 		<script type="text/javascript" src="js/cufon-yui.js"></script>
 		<script type="text/javascript" src="js/cufon-replace.js"></script>
@@ -19,15 +21,26 @@
 		<script type="text/javascript" src="js/bg.js" ></script>
 		<script type="text/javascript" src="js/tabs.js"></script>
 		<script type="text/javascript" src="js/slider.js" ></script>
+		<script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
-
-		<script type="text/javascript">
-
-		</script>
 
 	</head>
 
 	<body id="page1">
+											<?php 
+												require_once('config.php'); 
+												$id_post = "1";
+
+											    $sql = mysql_query("SELECT * FROM comments WHERE id_post = '$id_post'") or die(mysql_error());
+											    $commect_count = 0;
+											    while($affcom = mysql_fetch_assoc($sql)){ 
+											       
+											    $commect_count = $commect_count +1;
+											    
+											};
+		    
+
+											    ?>
 		<div class="spinner"></div>
 			<div id="bgSlider"></div>
 				<div class="extra">
@@ -35,7 +48,7 @@
 						<div class="box">
 <!-- header -->
 					<header>
-						<h1><a href="index.html" id="logo"></a></h1>
+						<h1><a href="index.php#!/page_Home" id="logo"></a></h1>
 						<nav>
 							<ul id="menu">
 								<li><a href="#!/page_Home" style="background:#244C98"><span></span><strong>ECVET-Home</strong></a></li>
@@ -43,7 +56,7 @@
 								<li><a href="#!/page_About" style="background:#F68712"><span></span><strong>ECVET-CMF</strong></a></li>
 								<li><a href="#!/cmf-levels" style="background:#81AF29"><span></span><strong>CMF-LEVEL</strong></a></li>
 								<li><a href="#!/page_who" style="background:#6AABC7"><span></span><strong>KEY-PROCESS</strong></a></li>
-								<li><a href="#!/Page_Goals" style="background:#244C98"><span></span><strong>KEY-PRACTICES</strong></a></li>
+								<li><a href="#!/key-practices" style="background:#244C98"><span></span><strong>KEY-PRACTICES</strong></a></li>
 							</ul>
 						</nav>
 					</header>
@@ -207,7 +220,7 @@
 													<li>The ECVET CMF is layered in <a href="#!/cmf-levels"><strong>five maturity levels</strong></a> that mark evolving capability of competent organisations in performing and participating in ECVET activities and programmes.</li>
 													<li>Each maturity level is composed of several <a href="#!/page_who"><strong>key process areas.</strong></a></li>
 													<li>Each key process area is organized into sections called common features.</li>
-													<li>The common features specify the <a href="#!/Page_Goals"><strong>key practices</strong></a> that, when collectively addressed, accomplish the goals of the key process area.</li>
+													<li>The common features specify the <a href="#!/key-practices"><strong>key practices</strong></a> that, when collectively addressed, accomplish the goals of the key process area.</li>
 													</ul>
 										<br />	 
 											<div class="wrapper" style="text-align:left">
@@ -418,10 +431,14 @@
 										</div>
 									</div>
 								</div>
-							</li>
-<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-<!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
-							<!-- <li id="Page_Goals">
+							</li>	
+
+
+
+
+
+
+							<li id="key-practices">
 								<div class="box1">
 									<div class="inner">
 										<a href="#" class="close" data-type="close"><span></span></a>
@@ -430,10 +447,11 @@
 													<div class="nav">
  														  <div class="menuholder">
      												  		 <ul class="menu slide">
-         											  			 <li><a href="#level4"class="orange">Repeatable</a></li>
-        								   						 <li><a href="#level5"class="yellow">Defined</a></li>
-        								   					     <li><a href="#levels"class="green">Managed</a></li>
-        								   						 <li><a href="#levelsa"class="blue">Optimising</a></li>
+     												  		 	<li><a href="#levela1"class="red">General</a></li>
+         											  			 <li><a href="#levela2"class="orange">Repeatable</a></li>
+        								   						 <li><a href="#levela3"class="yellow">Defined</a></li>
+        								   					     <li><a href="#levela4"class="green">Managed</a></li>
+        								   						 <li><a href="#levela5"class="blue">Optimising</a></li>
       									 				 	</ul>    	
    													 	</div>
   												  </div>
@@ -441,79 +459,161 @@
 
 											<div class="col2 pad_left1">
 
+											<div class="tab-content" id="levela1">
+											<h1 class="leveltitle"> FAQ </h1>
+											<?php 
+											    $sql = mysql_query("SELECT * FROM comments ORDER BY id_post DESC LIMIT 2 ") or die(mysql_error());
+											    
+											    while($affcom = mysql_fetch_assoc($sql)){ 
+											        $name = $affcom['name'];
+											        $email = $affcom['email'];
+											        $comment = $affcom['comment'];
+											        $date = $affcom['date'];
+											        $default = "mm";
+											        $size = 35;
+											        $grav_url = "http://www.gravatar.com/avatar/".md5(strtolower(trim($email)))."?d=".$default."&s=".$size;
+											        
 
-												<div class="tab-content" id="level4">
-												<h2 class="imgtxt4" style="color:#F68712" >Goals of Level 2 – The Repeatable level</h2>
+											    ?>
+											    <div class="cmt-cnt">
+											        <img src="<?php echo $grav_url; ?>" />
+											        <div class="thecom">
+											            <h5><?php echo $name; ?></h5><span data-utime="1371248446" class="com-dt"><?php echo $date; ?></span>
+											            <br/>
+											            <p class="hometxt">
+											                <?php echo $comment; ?>
+											            </p>
+											        </div>
+											    </div>
+											    <?php 
+											};
 
+
+											    ?>
+
+
+
+
+													<p class="lev2txt"> <a href="#!/comments" class="button1"><span></span><strong> view more <?php echo $commect_count?> comments</strong></a></p>
+													<div class="form-style-2">
+													<div class="form-style-2-heading">If you have more suggestion</div>
+													<form method="post" name="myemailform" action="form-to-email.php">
+													<label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="name" value="" /></label>
+													<label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="email" value="" /></label>
+													<label for="field4"><span>Topic</span><select name="field4" class="select-field">
+													<option value="General Question">General</option>
+													<option value="Actors">Actors</option>
+													<option value="levels">Levels</option>
+													<option value="key-process">Key Process</option>
+													<option value="Key-Practices">Key Practices</option>
+													</select></label>
+													<label for="field5"><span>Message <span class="required">*</span></span><textarea name="message" class="textarea-field"></textarea></label>
+													<label><span>&nbsp;</span><input class="styled-button-8" type="submit" name='submit' value="submit"/></label>
+													</form>
+													</div>
+
+
+												
+													
+													
+									
+												</div>
+
+
+												<div class="tab-content" id="levela2">
+												<h1 class="lev2title">Goals of Level 2 – The Repeatable level</h1>
 												<p class="imgtxt4" style="color:#F68712" >
 												Level 2 contains a set of initial practices. To achieve level 2, these initial activities may be performed in an ad hoc manner, but they must be performed. If a competent organization were to start with no capability in managing ECVET, it should focus initially on implementing the Level 2 practices. <br />
 												Thus, Level 2 is characterized by a single management practice:</p> <br />
 												<div class="imgtxt5">
-												<div id="flipaa"> 1. Initial practices are performed but may be ad hoc.</div>
+												<div id="flipaa"> 1. Initial practices are performed but may be ad hoc.<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelaa">In the context of this model, ad hoc (i.e., an ad hoc practice) refers to performing a practice in a manner that depends largely on the initiative and experience of an individual or team (and team leadership), without much in the way of organizational guidance in the form of a prescribed plan (verbal or written), policy, or training.</div> <br />
 												</div>
 												<p class="imgtxt4" style="color:#F68712" >
 												The quality of the outcome may vary significantly depending on who performs the practice, when it is performed, and the context of the problem being addressed, the methods, tools, and techniques used, and the priority given a particular instance of the practice. With experienced and talented personnel, high-quality outcomes may be achieved even if practices are ad hoc. However, at this level, lessons learned are typically not captured at the organizational level, so approaches and outcomes are difficult to repeat or improve across the organization.
 												</p>
+
 												</div>
 
-												<div class="tab-content" id="level5">
-												
-													
-												<h2 class="imgtxt4" style="color:#81AF29"> Goals of Level 3 – The Defined level</h2>
-												<p class="imgtxt4" style="color:#81AF29">Four key practices are present at Level 3, which represent an initial level of institutionalization of the activities within a domain:</p>
-												
 
+
+												<div class="tab-content" id="levela3">
+												<h1 class="lev3title"> Goals of Level 3 – The Defined level</h1>
+												<p class="imgtxt4" style="color:#81AF29">Four key practices are present at Level 3, which represent an initial level of institutionalization of the activities within a domain:</p>
+												<div class="imgtxt5" >
+
+
+												<div id="flipa1"> 1. Practices are documented.<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="panela1">The practices in the domain are being performed according to a documented plan. The focus here should be on planning to ensure that the practices are intentionally designed (or selected) to serve the organization.</div>
+
+												<div id="flipa2"> 2. Stakeholders of the practice are identified and involved.<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="panela2">Stakeholders of practices are identified and involved in the performance of the practices. This could include stakeholders from within the function, from across the organization, or from outside the organization, depending on how the organization implemented the practice.</div>
+
+												<div id="flipa3"> 3. Adequate resources are provided<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="panela3">to support the process (people, funding, and tools). Adequate resources are provided in the form of people, funding, and tools to ensure that the practices can be performed as intended. The performance of this practice can be evaluated by determining whether any desired practices have not been implemented due to a shortage of resources. If all desired practices have been implemented as intended by the organization, then adequate resources have been provided.</div>
+
+												<div id="flipa4"> 4. Standards and/or guidelines have been identified<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="panela4">to guide the implementation of the practices. The organization identified some standards and/or guidelines to inform the implementation of practices in the domain. These may simply be the reference sources the organization consulted when developing the plan for performing the practices.</div>
+												</div>
+
+												</p>
 												<p class="imgtxt4" style="color:#81AF29">
 												Overall, the practices at Level 3 are more complete than at Level 2 and are no longer performed irregularly or are not ad hoc in their implementation. As a result, the organization’s performance of the practices is more stable. At Level 3, the organization can be more confident that the performance of the domain practices will be sustained over time.
 												</p>
+												 
+
 												</div>
 
-												<div class="tab-content" id="levels">
-												<h2 class="imgtxt4" style="color:#D61740">Goals of Level 4 – The Managed level</h2>
+
+
+
+
+
+
+
+												<div class="tab-content" id="levela4">
+												<h1 class="lev4title">Goals of Level 4 – The Managed level</h1>
 												<p class="imgtxt4"  style="color:#D61740">At Level 4, the ECVET activities have been further institutionalized and are now being managed. Five key management practices support this progression:.<br />
 												</p>
-
 												<div class="imgtxt5" >
-
-												<div id="flipaq"> 1. Activities are guided by policies</div>
+												<div id="flipaq"> 1. Activities are guided by policies<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelaq">Activities are guided by policies (or other organizational directives) and governance. Managed activities in a domain receive guidance from the organization in the form of organizational direction, as in policies and governance. Policies are an extension of the planning activities that are in place at MIL2.</div>
-
-												
-
-												<div id="flipar"> 3. Periodically Reviewed</div>
+												<div id="flipar"> 3. Periodically Reviewed<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelar">Activities are periodically reviewed to ensure they conform to policy.</div>
 
-												<div id="flipat"> 4. Responsibility and Authority</div>
+												<div id="flipat"> 4. Responsibility and Authority<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelat">Responsibility and authority for performing the practices are assigned to personnel.</div>
 
-												<div id="flipay"> 5. Skills and Knowledge</div>
+												<div id="flipay"> 5. Skills and Knowledge<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelay">Personnel performing the practices have adequate skills and knowledge. The personnel assigned to perform the activities have adequate domain-specific skills and knowledge to perform their assignments.</div>
-
-
 												</div>
 												<br />
-
-
 												<p class="imgtxt4" style="color:#D61740">
 												At Level 4, the practices in a domain are further stabilized and are guided by high-level organizational directives, such as policy. As a result, the organization should have additional confidence in its ability to sustain the performance of the practices over time and across the organization.
 												</p>
 												</div>
 
-												<div class="tab-content" id="levelsa">
-												<h2 class="imgtxt4" style="color:#6AABC7">Goals of Level 5 – The Optimising level</h2>
+
+
+
+
+
+
+
+												<div class="tab-content" id="levela5">
+												<h1 class="lev5title">Goals of Level 5 – The Optimising level</h1>
 												<p class="imgtxt4"  style="color:#6AABC7">Level 5 of the ECVET CMF, marking the highest capability maturity of a competent organisation in terms of ECVET activities, portrays the mastery of the organisation of all lower levels and associated key process areas and practices. Moreover, it is characterized by three key practices that mark this achievement:<br />
 												</p>
 
 												<div class="imgtxt5" >
 
-												<div id="flipaf"> 1. Internal Evaluation</div>
+												<div id="flipaf"> 1. Internal Evaluation<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelaf">Transcript of achievement and internal evaluation is performed and documented for each round of ECVET activities.</div>
 
-												<div id="flipag"> 2. Change Management Practices</div>
+												<div id="flipag"> 2. Change Management Practices<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelag">Change management practices are performed for all key process areas.</div>
 
-												<div id="flipah"> 3. Issue Tracking Workflow</div>
+												<div id="flipah"> 3. Issue Tracking Workflow<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelah">An elaborate issue tracking workflow is supported to detect / capture and manage the resolution of any issues and defects in the key process areas and practices and effectively achieve improvement over time</div>
 
 
@@ -532,7 +632,13 @@
 									</div>
 								</div>
 
-							</li> -->
+							</li>
+
+
+
+
+
+
 
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 							
@@ -643,6 +749,9 @@
 							</li>
 
 
+							
+
+
 
 
 
@@ -669,10 +778,76 @@
 											<p>The models have been adopted by large organizations, including the US Department of Commerce, the US DoD, the UK Government, and a number of large services organizations, to assess competencies. As an example of the trend towards increased interest in applying capability maturity model techniques to IT architecture, all US federal agencies are now expected to provide maturity models and ratings as part of their IT investment management and audit requirements. In particular, the US Department of Commerce (DoC) has developed an IT Architecture Capability Maturity Model (ACMM)2 to aid in conducting internal assessments. The ACMM provides a framework that represents the key components of a productive IT architecture process. The goal is to enhance the overall odds for success of IT architecture by identifying weak areas and providing a defined evolutionary path to improving the overall architecture process.
 											The rationale of all of these models are to facilitate the introduction of a process improvement methodology, which aims to take projects, teams and organisations from the 1st “chaotic” or “initial” level, to a higher level, ideally but not necessarily level 5, "optimising".<br /> <br />Skipping levels is counter-productive because each level forms a necessary foundation from which to achieve the next level. The models identify the levels through which an organization must evolve to establish a culture of excellence in the related domain. Processes without the proper foundation fail at the very point they are needed most – under stress – and they provide no basis for future improvemen
 											</p>
+											<a href="#!/page_About" class="button1"><span></span><strong>back</strong></a>
 										</div>
 									</div>
 								</div>
 							</li>
+
+
+
+							<li id="comments">
+								<div class="box1">
+									<div class="inner">
+										<a href="#" class="close" data-type="close"><span></span></a>
+										<h1 class="hometitle">General Comments</h1>
+										
+											<div class="cmt-container" >
+											<a href="#rcom" class="button1"><span></span><strong>write new comment</strong></a>
+											<a href="#!/key-practices" class="button1"><span></span><strong>back to key practices</strong></a><br><br><br>
+											
+											
+											    <?php 
+											    $sql = mysql_query("SELECT * FROM comments WHERE id_post = '$id_post'") or die(mysql_error());
+											    
+											    while($affcom = mysql_fetch_assoc($sql)){ 
+											        $name = $affcom['name'];
+											        $email = $affcom['email'];
+											        $comment = $affcom['comment'];
+											        $date = $affcom['date'];
+											        $default = "mm";
+											        $size = 35;
+											        $grav_url = "http://www.gravatar.com/avatar/".md5(strtolower(trim($email)))."?d=".$default."&s=".$size;
+											        
+
+											    ?>
+											    <div class="cmt-cnt">
+											        <img src="<?php echo $grav_url; ?>" />
+											        <div class="thecom">
+											            <h5><?php echo $name; ?></h5><span data-utime="1371248446" class="com-dt"><?php echo $date; ?></span>
+											            <br/>
+											            <p class="hometxt">
+											                <?php echo $comment; ?>
+											            </p>
+											        </div>
+											    </div>
+											    <?php 
+											};?>
+
+
+											    <div class="new-com-bt" id="rcom">
+											        <span>Write a comment ...</span>
+											    </div>
+											    <div class="new-com-cnt">
+											        <input type="text" id="name-com" name="name-com" value="" placeholder="Your name" />
+											        <input type="mail" id="mail-com" name="mail-com" value="" placeholder="Your e-mail adress" />
+											        <textarea class="the-new-com"></textarea>
+											        <div class="bt-add-com">Post comment</div>
+											        <div class="bt-cancel-com">Cancel</div>
+											    </div>
+											    <div class="clear"></div>
+											</div>
+									</div>
+								</div>
+							</li>
+
+
+							
+
+
+							
+
+
 <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 						</ul>
 					</article>
@@ -692,13 +867,75 @@
 						<li><a href="images/bg_img3.jpg">3</a></li>
 					</ul> -->
 					<div class="col_1">
-						<a href="index.html" id="footer_logo"></a>
+						<a href="index.php" id="footer_logo"></a>
 					</div>
 
 				</footer>
 <!-- / footer-->
 			</div>
 		</div>
+		<script type="text/javascript">
+   $(function(){ 
+        //alert(event.timeStamp);
+        $('.new-com-bt').click(function(event){    
+            $(this).hide();
+            $('.new-com-cnt').show();
+            $('#name-com').focus();
+        });
+
+        /* when start writing the comment activate the "add" button */
+        $('.the-new-com').bind('input propertychange', function() {
+           $(".bt-add-com").css({opacity:0.6});
+           var checklength = $(this).val().length;
+           if(checklength){ $(".bt-add-com").css({opacity:1}); }
+        });
+
+        /* on clic  on the cancel button */
+        $('.bt-cancel-com').click(function(){
+            $('.the-new-com').val('');
+            $('.new-com-cnt').fadeOut('fast', function(){
+                $('.new-com-bt').fadeIn('fast');
+            });
+        });
+
+        // on post comment click 
+        $('.bt-add-com').click(function(){
+            var theCom = $('.the-new-com');
+            var theName = $('#name-com');
+            var theMail = $('#mail-com');
+
+            if( !theCom.val()){ 
+                alert('You need to write a comment!'); 
+            }else{ 
+                $.ajax({
+                    type: "POST",
+                    url: "ajax/add-comment.php",
+                    data: 'act=add-com&id_post='+<?php echo $id_post; ?>+'&name='+theName.val()+'&email='+theMail.val()+'&comment='+theCom.val(),
+                    success: function(html){
+                        theCom.val('');
+                        theMail.val('');
+                        theName.val('');
+                        $('.new-com-cnt').hide('fast', function(){
+                            $('.new-com-bt').show('fast');
+                            $('.new-com-bt').before(html);  
+                        })
+                    }  
+                });
+            }
+        });
+
+    });
+</script>
+<script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("myemailform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+
 		<script type="text/javascript"> Cufon.now(); </script>
 		<script>
 		$(window).load(function() {

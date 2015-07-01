@@ -415,3 +415,76 @@
 
 
 
+$(document).ready(function(){
+               $("#flipa1").click(function(){
+                  if($("#panela2").is(":visible")){
+                     $("#panela2").slideToggle("slow");
+                  }
+                  else if($("#panela3").is(":visible")){
+                     $("#panela3").slideToggle("slow");
+                  }
+                  else if($("#panela4").is(":visible")){
+                     $("#panela4").slideToggle("slow");
+                  }
+
+               $("#panela1").slideToggle("slow");
+
+                  });
+            });
+
+/*************************/
+
+
+
+
+
+        $(document).ready(function(){
+               $("#flipa2").click(function(){
+                  if($("#panela1").is(":visible")){
+                     $("#panela1").slideToggle("slow");
+                  }
+                  else if($("#panela3").is(":visible")){
+                     $("#panela3").slideToggle("slow");
+                  }
+                  else if($("#panela4").is(":visible")){
+                     $("#panela4").slideToggle("slow");
+                  }
+
+               $("#panela2").slideToggle("slow");
+
+                  });
+            });
+
+        $(document).ready(function(){
+               $("#flipa3").click(function(){
+                  if($("#panela2").is(":visible")){
+                     $("#panela2").slideToggle("slow");
+                  }
+                  else if($("#panela1").is(":visible")){
+                     $("#panela1").slideToggle("slow");
+                  }
+                  else if($("#panela4").is(":visible")){
+                     $("#panela4").slideToggle("slow");
+                  }
+
+               $("#panela3").slideToggle("slow");
+
+                  });
+            });
+
+$(document).ready(function(){
+               $("#flipa4").click(function(){
+                  if($("#panela2").is(":visible")){
+                     $("#panela2").slideToggle("slow");
+                  }
+                  else if($("#panela3").is(":visible")){
+                     $("#panela3").slideToggle("slow");
+                  }
+                  else if($("#panela1").is(":visible")){
+                     $("#panela1").slideToggle("slow");
+                  }
+
+               $("#panela4").slideToggle("slow");
+
+                  });
+            });
