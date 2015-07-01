@@ -26,8 +26,7 @@
 
 	</head>
 
-	<body id="page1">
-											<?php 
+	<body id="page1">  					<?php 
 												require_once('config.php'); 
 												$id_post = "1";
 
