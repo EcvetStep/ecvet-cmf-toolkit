@@ -5,17 +5,14 @@ if($_POST['act'] == 'add-com'):
     $email = htmlentities($email);
     $comment = htmlentities($comment);
 
-    // Connect to the database
 	include('../config.php'); 
 	
-	// Get gravatar Image 
-	// https://fr.gravatar.com/site/implement/images/php/
+
 	$default = "mm";
 	$size = 35;
 	$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?d=" . $default . "&s=" . $size;
 
 	if(strlen($name) <= '1'){ $name = 'Guest';}
-    //insert the comment in the database
     mysql_query("INSERT INTO comments (name, email, comment, id_post)VALUES( '$name', '$email', '$comment', '$id_post')");
     if(!mysql_errno()){
 ?>
@@ -27,7 +24,7 @@ if($_POST['act'] == 'add-com'):
 	        <br/>
 	       	<p><?php echo $comment; ?></p>
 	    </div>
-	</div><!-- end "cmt-cnt" -->
+	</div>
 
 	<?php } ?>
 <?php endif; ?>

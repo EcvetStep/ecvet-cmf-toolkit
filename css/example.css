@@ -1,10 +1,4 @@
-/**
-  Tutorial : Comments System with Reply Usong jQuery & Ajax
-  Author: Amine Kacem
-  Author URI: http://www.webcodo.com
-*/
 
-/* the comments container  */
 .cmt-container{ 
 	width: 540px;
 	height: 500px; min-height: 30px;
