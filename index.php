@@ -526,7 +526,7 @@
 												Level 2 contains a set of initial practices. To achieve level 2, these initial activities may be performed in an ad hoc manner, but they must be performed. If a competent organization were to start with no capability in managing ECVET, it should focus initially on implementing the Level 2 practices. <br />
 												Thus, Level 2 is characterized by a single management practice:</p> <br />
 												<div class="imgtxt5">
-												<div id="flipaa"> 1. Initial practices are performed but may be ad hoc.<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="flipaa"> 1. Initial practices are performed but may be ad hoc.<img class="arrow2" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelaa">In the context of this model, ad hoc (i.e., an ad hoc practice) refers to performing a practice in a manner that depends largely on the initiative and experience of an individual or team (and team leadership), without much in the way of organizational guidance in the form of a prescribed plan (verbal or written), policy, or training.</div> <br />
 												</div>
 												<p class="imgtxt4" style="color:#F68712" >
@@ -543,16 +543,16 @@
 												<div class="imgtxt5" >
 
 
-												<div id="flipa1"> 1. Practices are documented.<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="flipa1"> 1. Practices are documented.<img class="arrow2" src="images/arrow.png" alt="arrow"></div>
 												<div id="panela1">The practices in the domain are being performed according to a documented plan. The focus here should be on planning to ensure that the practices are intentionally designed (or selected) to serve the organization.</div>
 
-												<div id="flipa2"> 2. Stakeholders of the practice are identified and involved.<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="flipa2"> 2. Stakeholders of the practice are identified and involved.<img class="arrow2" src="images/arrow.png" alt="arrow"></div>
 												<div id="panela2">Stakeholders of practices are identified and involved in the performance of the practices. This could include stakeholders from within the function, from across the organization, or from outside the organization, depending on how the organization implemented the practice.</div>
 
-												<div id="flipa3"> 3. Adequate resources are provided<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="flipa3"> 3. Adequate resources are provided<img class="arrow2" src="images/arrow.png" alt="arrow"></div>
 												<div id="panela3">to support the process (people, funding, and tools). Adequate resources are provided in the form of people, funding, and tools to ensure that the practices can be performed as intended. The performance of this practice can be evaluated by determining whether any desired practices have not been implemented due to a shortage of resources. If all desired practices have been implemented as intended by the organization, then adequate resources have been provided.</div>
 
-												<div id="flipa4"> 4. Standards and/or guidelines have been identified<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="flipa4"> 4. Standards and/or guidelines have been identified<img class="arrow2" src="images/arrow.png" alt="arrow"></div>
 												<div id="panela4">to guide the implementation of the practices. The organization identified some standards and/or guidelines to inform the implementation of practices in the domain. These may simply be the reference sources the organization consulted when developing the plan for performing the practices.</div>
 												</div>
 
@@ -576,15 +576,15 @@
 												<p class="imgtxt4"  style="color:#D61740">At Level 4, the ECVET activities have been further institutionalized and are now being managed. Five key management practices support this progression:.<br />
 												</p>
 												<div class="imgtxt5" >
-												<div id="flipaq"> 1. Activities are guided by policies<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="flipaq"> 1. Activities are guided by policies<img class="arrow2" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelaq">Activities are guided by policies (or other organizational directives) and governance. Managed activities in a domain receive guidance from the organization in the form of organizational direction, as in policies and governance. Policies are an extension of the planning activities that are in place at MIL2.</div>
-												<div id="flipar"> 3. Periodically Reviewed<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="flipar"> 3. Periodically Reviewed<img class="arrow2" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelar">Activities are periodically reviewed to ensure they conform to policy.</div>
 
-												<div id="flipat"> 4. Responsibility and Authority<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="flipat"> 4. Responsibility and Authority<img class="arrow2" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelat">Responsibility and authority for performing the practices are assigned to personnel.</div>
 
-												<div id="flipay"> 5. Skills and Knowledge<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="flipay"> 5. Skills and Knowledge<img class="arrow2" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelay">Personnel performing the practices have adequate skills and knowledge. The personnel assigned to perform the activities have adequate domain-specific skills and knowledge to perform their assignments.</div>
 												</div>
 												<br />
@@ -607,13 +607,13 @@
 
 												<div class="imgtxt5" >
 
-												<div id="flipaf"> 1. Internal Evaluation<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="flipaf"> 1. Internal Evaluation<img class="arrow2" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelaf">Transcript of achievement and internal evaluation is performed and documented for each round of ECVET activities.</div>
 
-												<div id="flipag"> 2. Change Management Practices<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="flipag"> 2. Change Management Practices<img class="arrow2" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelag">Change management practices are performed for all key process areas.</div>
 
-												<div id="flipah"> 3. Issue Tracking Workflow<img class="arrow3" src="images/arrow.png" alt="arrow"></div>
+												<div id="flipah"> 3. Issue Tracking Workflow<img class="arrow2" src="images/arrow.png" alt="arrow"></div>
 												<div id="panelah">An elaborate issue tracking workflow is supported to detect / capture and manage the resolution of any issues and defects in the key process areas and practices and effectively achieve improvement over time</div>
 
 

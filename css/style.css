@@ -1250,7 +1250,7 @@ ul.menu li a.violet:hover,ul.menu li:hover a.violet {
 
     }
     .arrow{width: 25px;margin-left: 200px;}
-    .arrow2{width: 25px;margin-left: 195px;}
+    .arrow2{width: 25px;margin-left: 90%;margin-top: -15px;}
     .arrow3{width: 25px;margin-left: 195px;margin-top: -25px;}
 
 
