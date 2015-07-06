@@ -8,7 +8,7 @@
 		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="all">
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 		<link type="text/css" rel="stylesheet" href="css/example.css">
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery-1.6.js" ></script>
 		<script type="text/javascript" src="js/cufon-yui.js"></script>
 		<script type="text/javascript" src="js/cufon-replace.js"></script>
@@ -23,6 +23,7 @@
 		<script type="text/javascript" src="js/slider.js" ></script>
 		<script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
 		<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script src='js/jquery.elevatezoom.js'></script>
 		 <script>
     $(document).ready(function(){
     $('input.typeahead').typeahead({
@@ -591,9 +592,10 @@
 								<div class="box1">
 									<div class="inner">
 										<a href="#" class="close" data-type="close"><span></span></a>
-										<div class="wrapper pad_bot3">
+										<div class="wrapper pad_bot3" id="Fashion">
 											<h1 class="hometitle"> First Level - Initial</h1>
-												<img alt="initial" class="image" src="images/initial.png" />
+												<img class="image" id="zoom_01" alt="level1" src='images/initial.png' data-zoom-image="images/initial.png"/>
+
 												<p class="imgtxt1" >The overall process is characterized as ad hoc, and occasionally even chaotic. Few processes are defined, and success depends on individual effort.
 												In close resemblance to the description of the SW-CMM. 
 												</p>
@@ -613,7 +615,8 @@
 										<a href="#" class="close" data-type="close"><span></span></a>
 										<h1 class="lev2titledet"> Second-Level-Repeatable</h1>
 
-												<img alt="repeatable" class="image" src="images/repeatable.png"/>
+										<img class="image" id="zoom_02" alt="level2" src='images/repeatable.png' data-zoom-image="images/repeatable.png"/>
+
 												<p class="imgtxt1" style="color:#244C98">Basic project management processes are established to track schedule, functionality, and quality of VET actions. The necessary process discipline is in place to repeat earlier successes on projects with similar applications.
 												</p>
 												<p class="lev2det" style="color:#244C98">At the Repeatable Level, policies for managing VET programmes and procedures to implement those policies are established. 
@@ -636,7 +639,10 @@
 									<div class="inner">
 										<a href="#" class="close" data-type="close"><span></span></a>
 										<h1 class="lev3titledet"> Third-Level-Defined</h1>
-												<img alt="defined" class="image" src="images/defined.png" />
+
+										<img class="image" id="zoom_03" alt="level3" src='images/defined.png' data-zoom-image="images/defined.png"/>
+
+
 												<p class="imgtxt1" style="color:#244C98">For each VET programme, the process for both management and training activities is documented, standardised, and integrated into a standard ECVET process for the organisation. All programmes use an approved, tailored version of this organisation-wide process for VET actions.
 												</p>
 												<p class="lev3tdet" style="color:#244C98">
@@ -658,7 +664,9 @@
 									<div class="inner">
 										<a href="#" class="close" data-type="close"><span></span></a>
 										<h1 class="lev4titledet"> Fourth-Level-Managed</h1>
-												<img alt="managed" class="image" src="images/managed.png" />
+
+										<img class="image" id="zoom_04" alt="level4" src='images/managed.png' data-zoom-image="images/managed.png"/>
+
 												
 												<p class="imgtxt1" style="color:#244C98">Detailed measures of the ECVET process and VET quality are collected. Both the process and VET actions are quantitatively understood and controlled.<br />
 												</p>
@@ -679,7 +687,10 @@
 									<div class="inner">
 										<a href="#" class="close" data-type="close"><span></span></a>
 										<h1 class="lev5titledet"> Last-Level-Optimizing</h1>
-												<img alt="optimizing" class="image" src="images/optimizing.png" />
+
+										<img class="image" id="zoom_05" alt="level5" src='images/optimizing.png' data-zoom-image="images/optimizing.png"/>
+
+
 												
 												<p class="imgtxt1" style="color:#244C98">Continuous process improvement is enabled by quantitative feedback from the process and from piloting innovative ideas and technologies.
 												</p>
@@ -761,5 +772,12 @@
 			$('body').css({overflow:'inherit'})
 		})
 		</script>
+
+
+
+    
+
+
+
 	</body>
 </html>
