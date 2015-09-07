@@ -26,10 +26,7 @@ $(document).ready(function() {
 	
 	//tabs
 	tabs.init();
-	
-	// prettyPhoto
-		$("a[data-type^='prettyPhoto']").prettyPhoto({theme:'light_square'});
-	
+		
 	//bg animate
 	$('#bgSlider').bgSlider({
 		duration:1200,
