@@ -1182,14 +1182,6 @@ ul.menu li:hover a.violet {
     top: 1px;
 }
 
-.imagebig {
-    width: 400px;
-    height: 400px;
-    /*padding-bottom: 5px;*/
-    position: relative;
-    top: 10px;
-    left: -100px;
-}
 
 .image {
     width: 150px;
