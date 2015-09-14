@@ -9,4 +9,4 @@ HTML5 pages for presenting the core ideas of the ECVET CMF.
 The ECVET CMF is an outcome of the [*ECVET STEP project*](http://ecvet-step.eu).
 
 
-Created by Saleh Salem ([Eummena](http://eummena.eu)).
+Created by Saleh Salem ([Eummena](http://eummena.eu)) and [Tasos K](https://github.com/tafkey)
