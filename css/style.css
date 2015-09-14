@@ -212,18 +212,17 @@ header {
 }
 
 #menu > li {
-    overflow: hidden;
-    padding-bottom: 5px
+    width: 300px;
 }
 
 #menu > li > a {
     display: inline-block;
     font-size: 20px;
-    font-weight: bold;
-    line-height: 60px;
-    width: 100%;
+    width: 290px;
+    padding: 20px 5px 20px 5px;
     color: #fff;
     text-align: center;
+    font-weight: bold;
     text-decoration: none;
     position: relative;
     letter-spacing: 3px;
@@ -231,12 +230,22 @@ header {
 }
 
 #menu > li > a:hover {
-    color: green
+    color: #f5b80d;
 }
 
 #menu > li > a.active {
-    color: #D61740;
-    background: yellow
+    color: #f5b80d;
+    border: 5px solid #f5b80d;
+    padding: 15px 0px 15px 0px;
+}
+
+header #survey {
+    position: relative;
+    vertical-align: bottom;
+    margin-top:100px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    background-color: #dcdcdc;
 }
 
 
@@ -1479,10 +1488,8 @@ ul.menu li:hover a.violet {
 }
 
 .wordle {
-    width: 60%;
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-bottom: 30px;
+    width: 200px;
+    margin: 30px;
     position: relative;
 }
 
