@@ -377,6 +377,10 @@ article li {
 
 }
 
+span.kpa {
+    color: orange
+}
+
 .button1 {
     /*display: inline-block;*/
     /*font-size: 16px;*/
