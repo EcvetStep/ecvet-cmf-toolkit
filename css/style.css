@@ -57,6 +57,7 @@ body {
     background: #ffffff;
     border: 0;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
     color: #034B98;
     line-height: 20px;
     min-width: 800px;
@@ -364,6 +365,16 @@ article li {
 
 #content figure {
     padding-top: 5px
+}
+
+.action {
+    border: 1px dotted rgb(214, 23, 64);
+    margin-top: 20px;
+    padding: 5px;
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+    color: rgb(214, 23, 64);
+
 }
 
 .button1 {
