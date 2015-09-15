@@ -38,11 +38,11 @@ $(window).load(function() {
 
     if (location.hash.slice(0, 3) == '#!/') {
         page = location.hash.slice(3);
-        if (page == '') page = 'page_Home';
+        if (page == '') page = 'overview';
         open_page('#' + page);
         fl = false;
     } else {
-        page = 'page_Home';
+        page = 'overview';
         open_page('#' + page);
         fl = false;
     }
@@ -81,6 +81,10 @@ $(window).load(function() {
         $('#content').stop().animate({
             height: '868'
         })
+        act2 = '#' + page.slice(1);
+        // check if we're already in the page that's requested
+        if (act == act2) return;
+        // otherwise close the previous active page
         if (act != '') {
             $(act).find('.box1').stop().animate({
                 height: '0'

@@ -71,19 +71,6 @@ body {
     padding: 0;
 }
 
-.ic {
-    border: 0;
-    float: right;
-    background: #034B98;
-    color: #f00;
-    width: 50%;
-    line-height: 10px;
-    font-size: 10px;
-    margin: -220% 0 0 0;
-    overflow: hidden;
-    padding: 0
-}
-
 
 /* Global Structure ============================================================= */
 
@@ -265,7 +252,7 @@ article li {
 }
 
 #content {
-    height: 868px;
+    height: 8px;
     width: 740px;
     float: left;
     position: relative
@@ -280,8 +267,6 @@ article li {
 
 .box1 {
     background: #ffffff;
-    ;
-    ;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1496,7 +1481,7 @@ ul.menu li:hover a.violet {
 }
 
 .wordle {
-    width: 200px;
+    width: 500px;
     margin: 30px;
     position: relative;
 }
